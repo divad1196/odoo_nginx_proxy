@@ -68,10 +68,10 @@ async function build_odoo_rpc(url, database, login, password) {
     }
     return rpc;
 }
-let url = "http://localhost:8100";
+let url = "http://localhost:8069";
 let db = "";
-let login = "";
-let password = "";
+let login = "admin";
+let password = "admin";
 const rpc = await build_odoo_rpc(url, db, login, password);
 
 

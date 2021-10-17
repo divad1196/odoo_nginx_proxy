@@ -7,7 +7,7 @@ We bypass it using an nginx proxy in a docker container.
 
 ```bash
 # Build the image
-docker build -t odoo_nginx_proxy .
+docker build --no-cache -t odoo_nginx_proxy .
 
 # Run the new built image
 docker run -p 8100:80 -e 'PROXY=https://odoo.myserver.ch' -e 'CORS=https://www.google.com' odoo_nginx_proxy
